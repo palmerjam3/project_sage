@@ -1,0 +1,10 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<div class="scroll-container">
+    {% for picture in content %}
+        <div class="scroll-item"><img src="/static/projects/{{ picture }}"></div>
+    {% endfor %}    
+</div>
+
+{% endblock %}

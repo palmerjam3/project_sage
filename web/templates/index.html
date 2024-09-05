@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>K.M. Portfolio</title>
+    <link rel="stylesheet" href="/static/stylesheet.css"/>
+    <link rel="icon" type="image/x-icon" href="/static/kitty_logo_flav.ico"/>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="content upper">
+            <div class="logo">
+                <div class="kittylogo"><img class="image kitty_logo"></div>
+            </div>
+        </div>
+        <div class="content mid">
+            <div class="iconbar">
+                <div class="icon one"><a href="{{ url_for('user.about_me') }}"><img class="image about_me"></a></div>
+                <div class="icon two"><a href="{{ url_for('user.projects') }}"><img class="image projects"></a></div>
+                <div class="icon three"><a href="{{ url_for('user.illustrations') }}"><img class="image illustrations"></a></div>
+                <div class="icon four"><a href="{{ url_for('user.designs') }}"><img class="image designs"></a></div>
+            </div>
+        </div>
+        <div class="content lower">
+
+        </div>
+
+
+    </div>
+</body>
+</html>
